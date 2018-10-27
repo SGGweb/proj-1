@@ -1,0 +1,90 @@
+.header
+	transition: all .5ms ease
+	&_wrapper 
+		background: #000
+.logo 
+	z-index: 15
+	&_icon
+		padding: 5px 15px 0
+		display: inline-block
+.menu
+	flex-direction: column
+	position: absolute
+	top: 50px
+	right: 0
+	width: 100%
+	+gradient(45deg, #475B6D  0%,#3A5164  26.52%,#274158 100%)
+	display: none
+	text-align: right
+	+md
+		padding: 0
+		display: flex
+		justify-content: space-between
+		transition: all 100ms ease-out
+		flex-wrap: wrap
+		margin: 0
+	&_wrapper 
+	&_item 
+		display: block
+		padding: 5px 25px
+		+md 
+			display: inline-block
+	&_link 
+		display: inline-block
+		text-decoration: none
+		font-style: normal
+		font-weight: normal
+		line-height: 16px
+		font-size: 14px
+		text-transform: uppercase
+		color: #797979
+		padding: 10px 0
+.visible 
+	opacity: 1
+	display: flex
+	z-index: 10
+.menu_toggle
+	z-index: 110
+	position: absolute
+	background: #0D3756
+	top: 0
+	right: 0
+	height: 50px
+	width: 50px
+	transition: all 250ms ease-in-out
+	+md
+		display: none
+	&:hover
+		cursor: pointer
+		box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5)
+.is-active
+	// transform: rotate(45deg)
+	// border-radius: 50%
+
+	.hamburger
+		width: 0
+		&::before
+			transform: translate(-2px, 10px) rotate(45deg);
+		&::after
+			transform: translate(-2px, -10px) rotate(-45deg)
+.hamburger
+	margin-left: 12px
+	margin-top: 23px
+	height: 3px
+	width: 20px
+	border-radius: 1px
+	background-color: #fff
+	transition: all 250ms ease-in-out
+	&::before, &::after
+		content: ''
+		display: block
+		height: 3px
+		width: 25px
+		border-radius: 1px
+		background-color: #fff
+		transition: all 250ms ease-in-out
+		transform-origin: 100% 50%
+	&::before
+		transform: translateY(-10px)
+	&::after
+		transform: translateY(7px)
