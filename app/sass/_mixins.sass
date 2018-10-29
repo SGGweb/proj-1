@@ -13,3 +13,35 @@
 =xl
 	@media screen and (min-width: 1200px)
 		@content
+
+%circle
+  border-radius: 50%
+  display: inline-block
+  position: relative
+
+=circle($size)
+  width: $size
+  height: $size
+  @extend %circle
+
+=secondary-font($size: false, $weight: false, $colour: false, $lh: false)
+  font-family: 'bodoniflfregular'
+  @if $size
+    font-size: $size
+  @if $weight
+    font-weight: $weight
+  @if $colour
+    color: $colour
+  @if $lh
+    line-height: $lh
+
+=base-font($size: false, $weight: false, $colour: false, $lh: false)
+  font-family: 'Open Sans', sans-serif
+  @if $size
+    font-size: $size
+  @if $weight
+    font-weight: $weight
+  @if $colour
+    color: $colour
+  @if $lh
+    line-height: $lh

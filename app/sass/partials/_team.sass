@@ -1,0 +1,53 @@
+.team
+  background: $lightblue-bg
+  padding-top: 24px
+  &_header
+    margin-bottom: 20px
+  &_title
+    width: 59%
+    position: relative
+    overflow: hidden
+    font-size: 24px
+    font-weight: normal
+    text-align: center
+    +base-font(24px, 600, #333, 28px)
+  &_title--decoration
+    display: inline-block
+    margin: 0 .4em
+    &:before,
+    &:after
+      content: ''
+      position: absolute
+      width: 100%
+      border-top: 2px solid #4e4e4e
+      margin-top: .6em
+    &:before
+      margin-left: -108%
+    &:after
+      margin-left: 8%
+  &_subtitle
+    +secondary-font(48px, 300, #333, 54px)
+    margin-top: 12px
+  &_card
+    background: #FCFCFC
+    font-size: 16px
+    padding: 19px
+    text-align: center
+    margin-bottom: 50px
+    border-radius: 10px
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    +base-font(16px, 600, #333, 28px)
+  &_card-avatar
+    +circle(139px)
+    object-position: center center;
+    object-fit: cover;
+  &_card-member
+    +secondary-font(24px, 300, #333, 27px)
+    margin: 14px auto 0
+  &_card-position
+    margin: 5px auto
+
+
+
+
+  
