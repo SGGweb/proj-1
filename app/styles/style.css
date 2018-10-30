@@ -1,10 +1,20 @@
-.team_card-avatar
+.team_card-avatar,
+.team_card-member-profile::before
 {
     position: relative;
 
     display: inline-block;
 
     border-radius: 50%;
+}
+
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+    color: #333;
 }
 
 ul
@@ -24,6 +34,13 @@ img
 
     width: 100%;
     height: 100%;
+}
+
+.link
+{
+    text-decoration: none;
+
+    color: #333;
 }
 
 /*!
@@ -2763,7 +2780,7 @@ html
 
 .team_header
 {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 .team_title
@@ -2777,53 +2794,43 @@ html
 
     position: relative;
 
-    overflow: hidden;
-
-    width: 59%;
-
     text-align: center;
 
     color: #333;
 }
 
-.team_title--decoration
-{
-    display: inline-block;
-
-    margin: 0 .4em;
-}
-
-.team_title--decoration:before,
-.team_title--decoration:after
+.team_title:before,
+.team_title:after
 {
     position: absolute;
+    bottom: 40%;
 
-    width: 100%;
-    margin-top: .6em;
+    width: 64%;
+    height: 2px;
 
     content: '';
 
-    border-top: 2px solid #4e4e4e;
+    background: #c4c4c4;
 }
 
-.team_title--decoration:before
+.team_title:before
 {
-    margin-left: -108%;
+    left: -86%;
 }
 
-.team_title--decoration:after
+.team_title:after
 {
-    margin-left: 8%;
+    right: -86%;
 }
 
 .team_subtitle
 {
-    font-family: 'bodoniflfregular';
-    font-size: 48px;
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
     font-weight: 300;
     line-height: 54px;
 
-    margin-top: 12px;
+    margin-top: 9px;
 
     color: #333;
 }
@@ -2836,7 +2843,7 @@ html
     font-weight: 600;
     line-height: 28px;
 
-    margin-bottom: 50px;
+    margin-bottom: 44px;
     padding: 19px;
 
     text-align: center;
@@ -2860,17 +2867,38 @@ html
 
 .team_card-member
 {
-    font-family: 'bodoniflfregular';
-    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
     font-weight: 300;
     line-height: 27px;
 
-    margin: 14px auto 0;
+    margin: 6px auto 0;
 
     color: #333;
 }
 
 .team_card-position
 {
-    margin: 5px auto;
+    margin: 7px auto;
+}
+
+.team_card-member-profile
+{
+    position: relative;
+
+    padding-left: 18px;
+}
+
+.team_card-member-profile::before
+{
+    position: absolute;
+    top: 4px;
+    left: -10px;
+
+    width: 22px;
+    height: 22px;
+
+    content: '';
+
+    background: #007ab9 url(../images/linkedin-icon.svg) 5px 5px no-repeat;
 }
