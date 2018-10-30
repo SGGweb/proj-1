@@ -2780,6 +2780,8 @@ html
 
 .team_header
 {
+    overflow: hidden;
+
     margin-bottom: 24px;
 }
 
@@ -2831,6 +2833,8 @@ html
     line-height: 54px;
 
     margin-top: 9px;
+
+    text-align: center;
 
     color: #333;
 }
