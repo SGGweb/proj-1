@@ -1,48 +1,45 @@
-section.team
-	.container
-		.team_header.d-flex.flex-column.align-items-center
-			h3.team_title Вместе к победе
-			h2.team_subtitle Наша команда
-		.row.team_cards.justify-content-between.flex-wrap
-			.col-12.col-md-6.col-lg-4.d-flex.flex-column
-				.team_card.d-flex.flex-column.justify-content-around.align-items-center
-					a.link
-						img.team_card-avatar(src="uploads/avatar-1.jpeg", alt="member-avatar")
-					h4.team_card-member Khakim Rich
-					p.team_card-position Founder
-					a.team_card-member-profile.link(href="#") See profile
-			.col-12.col-md-6.col-lg-4.d-flex.flex-column
-				.team_card.d-flex.flex-column.justify-content-around.align-items-center
-					a.link
-						img.team_card-avatar(src="uploads/avatar-2.jpeg", alt="member-avatar")
-					h4.team_card-member Mika Richards
-					p.team_card-position CTO
-					a.team_card-member-profile.link(href="#") See profile
-			.col-12.col-md-6.col-lg-4.d-flex.flex-column
-				.team_card.d-flex.flex-column.justify-content-around.align-items-center
-					a.link
-						img.team_card-avatar(src="uploads/avatar-3.jpeg", alt="member-avatar")
-					h4.team_card-member Mark Twen
-					p.team_card-position CCO
-					a.team_card-member-profile.link(href="#") See profile
-			.col-12.col-md-6.col-lg-4.d-flex.flex-column
-				.team_card.d-flex.flex-column.justify-content-around.align-items-center
-					a.link
-						img.team_card-avatar(src="uploads/avatar-4.jpeg", alt="member-avatar")
-					h4.team_card-member Satoshi Biti
-					p.team_card-position Project Support
-					a.team_card-member-profile.link(href="#") See profile
-			.col-12.col-md-6.col-lg-4.d-flex.flex-column
-				.team_card.d-flex.flex-column.justify-content-around.align-items-center
-					a.link
-						img.team_card-avatar(src="uploads/avatar-5.jpeg", alt="member-avatar")
-					h4.team_card-member Sergey Rebrov
-					p.team_card-position Sales Representative
-					a.team_card-member-profile.link(href="#") See profile
-			.col-12.col-md-6.col-lg-4.d-flex.flex-column
-				.team_card.d-flex.flex-column.justify-content-around.align-items-center
-					a.link
-						img.team_card-avatar(src="uploads/avatar-6.jpeg", alt="member-avatar")
-					h4.team_card-member Yakub Rakhimov
-					p.team_card-position PR-lead
-					a.team_card-member-profile.link(href="#") See profile
+//- //- section.team
+//- //- 	.container
+//- //- 		.team_header.d-flex.flex-column.align-items-center
+//- //- 			h3.team_title Вместе к победе
+//- //- 			h2.team_subtitle Наша команда
+//- //- 		.row.team_cards.justify-content-between
+//- //- 			.col-12.col-md-6.col-lg-4.d-flex.flex-column
+//- //- 				.team_card.d-flex.flex-column.justify-content-around.align-items-center
+//- //- 					a(href="#").link.d-flex.flex-column.justify-content-around.align-items-center
+//- //- 						img.team_card-avatar(src="uploads/avatar-1.jpeg", alt="member-avatar")
+//- //- 					h4.team_card-member Khakim Rich
+//- //- 					p.team_card-position Founder
+//- //- 					a.team_card-member-profile.link(href="#") See profile
+
+//- mixin team_card(team_array)
+//- 	section.team
+//- 		.container
+//- 			.team_header.d-flex.flex-column.align-items-center
+//- 				h3.team_title Вместе к победе
+//- 				h2.team_subtitle Наша команда
+//- 			.row.team_cards.justify-content-between
+//- 				each item in team_array
+//- 					.col-12.col-md-6.col-lg-4.d-flex.flex-column
+//- 						.team_card.team_card.d-flex.flex-column.justify-content-around.align-items-center
+//- 							a(href="#").link.d-flex.flex-column.justify-content-around.align-items-center
+//- 								img.team_card__avatar(src=`uploads/${item.avatar}.jpeg`, alt="member-avatar")
+//- 							h4.team_card__member= item.member
+//- 							p.team_card__position= item.position
+//- 							a(href="#").link.team_card__profile See profile
+
+block team
+	section.team
+		.container
+			.team_header.d-flex.flex-column.align-items-center
+				h3.team_title Вместе к победе
+				h2.team_subtitle Наша команда
+			.row.team_cards.justify-content-between
+				each item in team
+					.col-12.col-md-6.col-lg-4.d-flex.flex-column
+						.team_card.team_card.d-flex.flex-column.justify-content-around.align-items-center
+							a(href="#").link.d-flex.flex-column.justify-content-around.align-items-center
+								img.team_card__avatar(src=`uploads/${item.avatar}.jpeg`, alt="member-avatar")
+							h4.team_card__member= item.member
+							p.team_card__position= item.position
+							a(href="#").link.team_card__profile See profile

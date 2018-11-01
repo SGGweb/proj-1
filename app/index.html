@@ -5,75 +5,189 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Playfair+Display" rel="stylesheet">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/fonts.css">
     <title>myUmmah</title>
 </head>
 
 <body>
     <!--include _layouts/header-->
+    <section class="news">
+        <div class="container">
+            <div class="news_header d-flex flex-column align-items-center">
+                <h3 class="news_title">Что нового</h3>
+                <h2 class="news_subtitle">Новости о проекте</h2>
+            </div>
+            <div class="news_cards">
+                <div class="row">
+                    <div class="col-12 col-md-4 d-flex flex-column">
+                        <div class="news_card d-flex flex-column align-items-center flex-grow-1">
+                            <div class="news_logo-wrap d-flex justify-content-start align-items-end align-self-stretch">
+                                <a class="link" href="#">
+                                    <img class="news_logo" src="uploads/news-logo-1.png" alt="news logo">
+                                </a>
+                            </div>
+                            <div class="news_card-content flex-grow-1">
+                                <a class="link align-self-stretch" href="#">
+                                    <img class="news_card-avatar" src="uploads/news-image-1.jpg" alt="member-avatar">
+                                </a>
+                                <div class="news_card-text--wrap d-flex align-items-start flex-column">
+                                    <h4 class="news_card-title">Партнерство с Bittrex</h4>
+                                    <p class="news_card-text">MyUmmah has signed a strategic agreement with IBM that will give our team a competitive edge in terms of technology, infrastructure and its services.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex flex-column">
+                        <div class="news_card d-flex flex-column align-items-center flex-grow-1">
+                            <div class="news_logo-wrap d-flex justify-content-start align-items-end align-self-stretch">
+                                <a class="link" href="#">
+                                    <img class="news_logo" src="uploads/news-logo-2.png" alt="news logo">
+                                </a>
+                            </div>
+                            <div class="news_card-content flex-grow-1">
+                                <a class="link align-self-stretch" href="#">
+                                    <img class="news_card-avatar" src="uploads/news-image-2.jpg" alt="member-avatar">
+                                </a>
+                                <div class="news_card-text--wrap d-flex align-items-start flex-column">
+                                    <h4 class="news_card-title">September Recap</h4>
+                                    <p class="news_card-text">Dear community,Hope you are all doing well! Things have been a little quiet from our side and the reason for that was announced earlier in July. The development team led by Jake is working non-stop and making steady
+                                        progress with the blockchain solution</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex flex-column">
+                        <div class="news_card d-flex flex-column align-items-center flex-grow-1">
+                            <div class="news_logo-wrap d-flex justify-content-start align-items-end align-self-stretch">
+                                <a class="link" href="#">
+                                    <img class="news_logo" src="uploads/news-logo-3.png" alt="news logo">
+                                </a>
+                            </div>
+                            <div class="news_card-content flex-grow-1">
+                                <a class="link align-self-stretch" href="#">
+                                    <img class="news_card-avatar" src="uploads/news-image-3.jpg" alt="member-avatar">
+                                </a>
+                                <div class="news_card-text--wrap d-flex align-items-start flex-column">
+                                    <h4 class="news_card-title">UMM is trading on UPcoin</h4>
+                                    <p class="news_card-text">We are pleased to announce that MyUmmah is listed on the newly launched UPcoin exchange. UPcoin has gone through its final phase of testing before officially launching earlier this week.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ico">
+        <div class="container">
+            <div class="ico_header d-flex flex-column align-items-center">
+                <h3 class="ico_title">Детали ICO</h3>
+                <h2 class="ico_subtitle">Продажа токенов</h2>
+            </div>
+            <p class="ico_token-description">MyUmmah токен - это платежная единица MyUmmah высокой ликвидности, разработанная на платформе Ethereum. Токен предназначен для упрощения стандартизованного глобального использования и оплаты услуг приложения MyUmmah, при этом предоставляя
+                сохранность и безопасность всех транзакции. MyUmmah токен соответствует стандарту ERC20 и является стандартным для смарт-контрактов с токенами.</p>
+            <table>
+                <tr class="ico_features-row">
+                    <td class="ico_row-title">Название</td>
+                    <td class="ico_row-value justify-content-center">UMM</td>
+                </tr>
+                <tr class="ico_features-row">
+                    <td class="ico_row-title">Hard cap</td>
+                    <td class="ico_row-value justify-content-center">30,000,000USD</td>
+                </tr>
+                <tr class="ico_features-row">
+                    <td class="ico_row-title">Soft cap</td>
+                    <td class="ico_row-value justify-content-center">3,000,000USD</td>
+                </tr>
+                <tr class="ico_features-row">
+                    <td class="ico_row-title">Цена токена</td>
+                    <td class="ico_row-value justify-content-center">0.008USD</td>
+                </tr>
+                <tr class="ico_features-row">
+                    <td class="ico_row-title">Варианты оплаты</td>
+                    <td class="ico_row-value justify-content-center">Etherium</td>
+                </tr>
+                <tr class="ico_features-row">
+                    <td class="ico_row-title">Контракт UMM токена</td>
+                    <td class="ico_row-value justify-content-center">etherscan</td>
+                </tr>
+                <tr class="ico_features-row">
+                    <td class="ico_row-title">Начало</td>
+                    <td class="ico_row-value justify-content-center">1 ноября 2018</td>
+                </tr>
+                <tr class="ico_features-row">
+                    <td class="ico_row-title">Конец</td>
+                    <td class="ico_row-value justify-content-center">31 января 2019</td>
+                </tr>
+                <tr class="ico_features-row">
+                    <td class="ico_row-title">Early-bird скидка</td>
+                    <td class="ico_row-value justify-content-center"></td>
+                </tr>
+            </table>
+        </div>
+    </section>
     <section class="team">
         <div class="container">
             <div class="team_header d-flex flex-column align-items-center">
                 <h3 class="team_title">Вместе к победе</h3>
                 <h2 class="team_subtitle">Наша команда</h2>
             </div>
-            <div class="row team_cards justify-content-between flex-wrap">
+            <div class="row team_cards justify-content-between">
                 <div class="col-12 col-md-6 col-lg-4 d-flex flex-column">
-                    <div class="team_card d-flex flex-column justify-content-around align-items-center">
-                        <a class="link">
-                            <img class="team_card-avatar" src="uploads/avatar-1.jpeg" alt="member-avatar">
+                    <div class="team_card team_card d-flex flex-column justify-content-around align-items-center">
+                        <a class="link d-flex flex-column justify-content-around align-items-center" href="#">
+                            <img class="team_card__avatar" src="uploads/avatar-1.jpeg" alt="member-avatar">
                         </a>
-                        <h4 class="team_card-member">Khakim Rich</h4>
-                        <p class="team_card-position">Founder</p><a class="team_card-member-profile link" href="#">See profile</a>
+                        <h4 class="team_card__member">Khakim Rich</h4>
+                        <p class="team_card__position">Founder</p><a class="link team_card__profile" href="#">See profile</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 d-flex flex-column">
-                    <div class="team_card d-flex flex-column justify-content-around align-items-center">
-                        <a class="link">
-                            <img class="team_card-avatar" src="uploads/avatar-2.jpeg" alt="member-avatar">
+                    <div class="team_card team_card d-flex flex-column justify-content-around align-items-center">
+                        <a class="link d-flex flex-column justify-content-around align-items-center" href="#">
+                            <img class="team_card__avatar" src="uploads/avatar-2.jpeg" alt="member-avatar">
                         </a>
-                        <h4 class="team_card-member">Mika Richards</h4>
-                        <p class="team_card-position">CTO</p><a class="team_card-member-profile link" href="#">See profile</a>
+                        <h4 class="team_card__member">Mika Richards</h4>
+                        <p class="team_card__position">CTO</p><a class="link team_card__profile" href="#">See profile</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 d-flex flex-column">
-                    <div class="team_card d-flex flex-column justify-content-around align-items-center">
-                        <a class="link">
-                            <img class="team_card-avatar" src="uploads/avatar-3.jpeg" alt="member-avatar">
+                    <div class="team_card team_card d-flex flex-column justify-content-around align-items-center">
+                        <a class="link d-flex flex-column justify-content-around align-items-center" href="#">
+                            <img class="team_card__avatar" src="uploads/avatar-3.jpeg" alt="member-avatar">
                         </a>
-                        <h4 class="team_card-member">Mark Twen</h4>
-                        <p class="team_card-position">CCO</p><a class="team_card-member-profile link" href="#">See profile</a>
+                        <h4 class="team_card__member">Mark Twen</h4>
+                        <p class="team_card__position">CCO</p><a class="link team_card__profile" href="#">See profile</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 d-flex flex-column">
-                    <div class="team_card d-flex flex-column justify-content-around align-items-center">
-                        <a class="link">
-                            <img class="team_card-avatar" src="uploads/avatar-4.jpeg" alt="member-avatar">
+                    <div class="team_card team_card d-flex flex-column justify-content-around align-items-center">
+                        <a class="link d-flex flex-column justify-content-around align-items-center" href="#">
+                            <img class="team_card__avatar" src="uploads/avatar-4.jpeg" alt="member-avatar">
                         </a>
-                        <h4 class="team_card-member">Satoshi Biti</h4>
-                        <p class="team_card-position">Project Support</p><a class="team_card-member-profile link" href="#">See profile</a>
+                        <h4 class="team_card__member">Satoshi Biti</h4>
+                        <p class="team_card__position">Project Support</p><a class="link team_card__profile" href="#">See profile</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 d-flex flex-column">
-                    <div class="team_card d-flex flex-column justify-content-around align-items-center">
-                        <a class="link">
-                            <img class="team_card-avatar" src="uploads/avatar-5.jpeg" alt="member-avatar">
+                    <div class="team_card team_card d-flex flex-column justify-content-around align-items-center">
+                        <a class="link d-flex flex-column justify-content-around align-items-center" href="#">
+                            <img class="team_card__avatar" src="uploads/avatar-5.jpeg" alt="member-avatar">
                         </a>
-                        <h4 class="team_card-member">Sergey Rebrov</h4>
-                        <p class="team_card-position">Sales Representative</p><a class="team_card-member-profile link" href="#">See profile</a>
+                        <h4 class="team_card__member">Sergey Rebrov</h4>
+                        <p class="team_card__position">Sales Representative</p><a class="link team_card__profile" href="#">See profile</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 d-flex flex-column">
-                    <div class="team_card d-flex flex-column justify-content-around align-items-center">
-                        <a class="link">
-                            <img class="team_card-avatar" src="uploads/avatar-6.jpeg" alt="member-avatar">
+                    <div class="team_card team_card d-flex flex-column justify-content-around align-items-center">
+                        <a class="link d-flex flex-column justify-content-around align-items-center" href="#">
+                            <img class="team_card__avatar" src="uploads/avatar-6.jpeg" alt="member-avatar">
                         </a>
-                        <h4 class="team_card-member">Yakub Rakhimov</h4>
-                        <p class="team_card-position">PR-lead</p><a class="team_card-member-profile link" href="#">See profile</a>
+                        <h4 class="team_card__member">Yakub Rakhimov</h4>
+                        <p class="team_card__position">PR-lead</p><a class="link team_card__profile" href="#">See profile</a>
                     </div>
                 </div>
             </div>
@@ -84,6 +198,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/news_slider.js"></script>
 </body>
 
 </html>

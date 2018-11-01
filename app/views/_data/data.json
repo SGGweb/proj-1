@@ -1,5 +1,56 @@
 {
-	"title": "sti"
+	"team": [
+		{
+			"avatar": "avatar-1",
+			"member": "Khakim Rich",
+			"position": "Founder"
+		},
+		{
+			"avatar": "avatar-2",
+			"member": "Mika Richards",
+			"position": "CTO"
+		},
+		{
+			"avatar": "avatar-3",
+			"member": "Mark Twen",
+			"position": "CCO"
+		},
+		{
+			"avatar": "avatar-4",
+			"member": "Satoshi Biti",
+			"position": "Project Support"
+		},
+		{
+			"avatar": "avatar-5",
+			"member": "Sergey Rebrov",
+			"position": "Sales Representative"
+		},
+		{
+			"avatar": "avatar-6",
+			"member": "Yakub Rakhimov",
+			"position": "PR-lead"
+		}
+	],
+	"news": [
+		{
+			"logo": "news-logo-1",
+			"cover": "news-image-1",
+			"title": "Партнерство с Bittrex",
+			"text": "MyUmmah has signed a strategic agreement with IBM that will give our team a competitive edge in terms of technology, infrastructure and its services."
+		},
+		{
+			"logo": "news-logo-2",
+			"cover": "news-image-1",
+			"title": "September Recap",
+			"text": "Dear community, Hope you are all doing well! Things have been a little quiet from our side and the reason for that was announced earlier in July. The development team led by Jake is working non-stop and making steady progress with the blockchain solution"
+		},
+		{
+			"logo": "news-logo-3",
+			"cover": "news-image-1",
+			"title": "UMM is trading on UPcoin",
+			"text": "We are pleased to announce that MyUmmah is listed on the newly launched UPcoin exchange. UPcoin has gone through  its final phase of testing before officially launching earlier this week."
+		}
+	]
 }
 
 

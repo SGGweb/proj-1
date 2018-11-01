@@ -5,25 +5,9 @@
     margin-bottom: 24px
     overflow: hidden
   &_title
-    position: relative
-    font-size: 24px
-    font-weight: normal
-    text-align: center
-    +base-font(24px, 600, $base-text-color, 28px)
-    &:before,
-    &:after
-      content: ''
-      position: absolute
-      bottom: 40%
-      width: 64%
-      height: 2px
-      background: #c4c4c4
-    &:before
-      left: -86%
-    &:after
-      right: -86%
+    +block-title($base-text-color)
   &_subtitle
-    +secondary-font(45px, 300, $base-text-color, 54px)
+    +secondary-font(43px, 300, $base-text-color, 54px)
     margin-top: 9px
     text-align: center
   &_card
@@ -35,16 +19,16 @@
     border-radius: 10px
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
     +base-font(16px, 600, $base-text-color, 28px)
-  &_card-avatar
+  &_card__avatar
     +circle(139px)
     object-position: center center;
     object-fit: cover;
-  &_card-member
+  &_card__member
     +secondary-font(23px, 300, $base-text-color, 27px)
     margin: 6px auto 0
-  &_card-position
+  &_card__position
     margin: 7px auto
-  &_card-member-profile
+  &_card__profile
     position: relative
     padding-left: 18px
     &::before

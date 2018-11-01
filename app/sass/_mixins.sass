@@ -45,3 +45,32 @@
     color: $colour
   @if $lh
     line-height: $lh
+
+
+%title
+  position: relative
+  font-size: 24px
+  font-weight: normal
+  text-align: center
+  +base-font(24px, 600, false, 28px)
+  &:before,
+  &:after
+    content: ''
+    position: absolute
+    bottom: 40%
+    width: 65%
+    height: 2px
+    background: #000
+  &:before
+    left: -90%
+  &:after
+    right: -90%
+  .subtitle
+
+
+=block-title($text-color)
+  color: $text-color
+  &:before,
+  &:after
+    background: transparentize($text-color, 0.7)
+  @extend %title
