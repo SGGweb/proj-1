@@ -1,0 +1,61 @@
+.mission
+  padding-top: 24px
+  &_header
+    margin-bottom: 55px
+    overflow: hidden
+    +sm
+      margin-bottom: 15px
+  &_title
+    +block-title($base-text-color)
+  &_subtitle
+    +secondary-font(43px, 300, $base-text-color, 54px)
+    margin-top: 9px
+    text-align: center
+    +sm
+      margin-bottom: 0
+  &_quote
+    position: relative
+    padding: 0 45px 1px
+    margin: 0 50px
+    text-align: justify
+    &:before
+      top: 0
+      left: 0
+      background-image: url(../images/open-quote.svg)
+    &:after
+      bottom: 0
+      right: 0
+      background-image: url(../images/close-quote.svg)
+    &:before,
+    &:after
+      display: block
+      content: ''
+      position: absolute
+      width: 35px
+      height: 30px
+      background-repeat: no-repeat
+      background-position: 0 0
+    +sm
+      padding: 10px 0
+      text-align: center
+      &:before
+        display: none
+      &:after
+        display: none
+  &_text
+    +base-font(24px, 300, $light-text-color, 41px)
+    +sm
+      +base-font(16px, false, false, 22px)
+  &_avatar
+    +circle(85px)
+    object-position: center center;
+    object-fit: cover;
+    margin: 30px 60px
+    +sm
+      margin: 30px 20px
+  &_quote__author
+    +secondary-font(36px, 300, $base-text-color, 40px)
+    margin-bottom: 8px
+  &_quote__info
+    +base-font(20px, 300, $base-text-color, 34px)
+    margin-top: 8px

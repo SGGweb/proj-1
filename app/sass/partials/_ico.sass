@@ -1,5 +1,6 @@
 .ico
   padding-top: 24px
+  margin-bottom: 50px
   &_header
     margin-bottom: 24px
     overflow: hidden
@@ -9,13 +10,15 @@
     +secondary-font(43px, 300, $base-text-color, 54px)
     margin-top: 9px
     text-align: center
+  &_token__description
+    +base-font(18px, 300, $base-text-color, 31px)
   &_table
-    width: 100%
-    border-spacing: 0
-  &_row-title
+    +sm
+      overflow-x: scroll
+  &_row__title
     border-bottom: 1px solid #000
     +secondary-font(27px, 300, $base-text-color, 30px)
-    padding: 15px 45px 15px 0
-  &_row-value
+    padding: 15px 60px 15px 0
+  &_row__value
     border-bottom: 1px solid #000
     +base-font(16px, 300, $base-text-color, 27px)

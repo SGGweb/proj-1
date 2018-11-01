@@ -2,16 +2,16 @@
   background: linear-gradient($direction, $from, $center, $to)
 
 =sm
-	@media screen and (min-width: 576px)
+	@media screen and (max-width: 576px)
 		@content
 =md
-	@media screen and (min-width: 768px)
+	@media screen and (max-width: 768px)
 		@content
 =lg
-	@media screen and (min-width: 992px)
+	@media screen and (max-width: 992px)
 		@content
 =xl
-	@media screen and (min-width: 1200px)
+	@media screen and (max-width: 1200px)
 		@content
 
 %circle
@@ -23,6 +23,12 @@
   width: $size
   height: $size
   @extend %circle
+
+=square($size)
+  width: $size
+  height: $size
+  display: inline-block
+  position: relative
 
 =secondary-font($size: false, $weight: false, $colour: false, $lh: false)
   font-family: 'Playfair Display', serif
