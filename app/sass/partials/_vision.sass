@@ -1,0 +1,25 @@
+.vision
+  background: radial-gradient(circle at 50% 50%, #3C4A5E 0%, #112D47 80%)
+  padding-top: 25px
+  padding-bottom: 20px
+  &_header
+    margin-bottom: 15px
+    overflow: hidden
+    text-align: center
+  &_title
+    +block-title($white-color, transparentize($base-text-color, 1))
+    margin-bottom: 15px
+    font-size: 27px
+  &_subtitle
+    +secondary-font(48px, 300, $white-color, 54px)
+    margin-top: 20px
+    margin-bottom: 10px
+  &_card__cover
+  	padding: 35px
+  &_card__title
+  	+secondary-font(24px, 300, $white-color, 27px)
+  &_card__text
+  	+base-font(15px, false, $white-color, 24px)
+  	padding-right: 20px
+  	+lg
+  		padding-right: 5px

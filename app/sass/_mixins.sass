@@ -74,9 +74,9 @@
   .subtitle
 
 
-=block-title($text-color)
+=block-title($text-color, $bg-color)
   color: $text-color
   &:before,
   &:after
-    background: transparentize($text-color, 0.7)
+    background: $bg-color
   @extend %title

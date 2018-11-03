@@ -1,0 +1,30 @@
+.partners
+  background: radial-gradient(circle at 56.62% 49.76%, #475B6D 0%, #3A5164 26.52%, #274158 80%)
+  padding-top: 25px
+  padding-bottom: 30px
+  &_header
+    margin-bottom: 0px
+    overflow: hidden
+    text-align: center
+  &_title
+    +block-title(transparentize($white-color, 0.3), transparentize($base-text-color, 1))
+    margin-bottom: 15px
+  &_subtitle
+    +secondary-font(43px, 300, $white-color, 54px)
+    margin-top: 20px
+    margin-bottom: 35px
+  &_logos__list
+    text-align: center
+  &_logo
+    margin: 0 auto
+    display: inline-block
+    list-style: none
+    padding: 10px 20px
+    opacity: 0.5
+    transition: 0.3s opacity ease
+    &:hover
+      opacity: 1
+  &_bottom__subtitle
+    margin-bottom: 0px
+    text-align: center
+    +block-title(transparentize($white-color, 0.3), transparentize($white-color, 0.6))

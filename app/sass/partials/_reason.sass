@@ -5,7 +5,7 @@
     margin-bottom: 80px
     overflow: hidden
   &_title
-    +block-title($base-text-color)
+    +block-title($base-text-color, transparentize($base-text-color, 0.7))
   &_subtitle
     +secondary-font(43px, 300, $base-text-color, 54px)
     margin-top: 9px
@@ -20,11 +20,14 @@
       margin-right: 10px
   &_content
     padding-right: 25px
+    text-align: left
+    +md
+      text-align: center
   &_card__title
     +secondary-font(18px, 300, $base-text-color, 20px)
     text-transform: uppercase
     margin-top: 0
   &_content__last
     text-align: center
-    +md
-      text-align: left
+    // +md
+    //   text-align: left
