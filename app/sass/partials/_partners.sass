@@ -7,10 +7,12 @@
     overflow: hidden
     text-align: center
   &_title
+    font-family: $open-sans
     +block-title(transparentize($white-color, 0.3), transparentize($base-text-color, 1))
     margin-bottom: 15px
   &_subtitle
-    +secondary-font(43px, 300, $white-color, 54px)
+    +font(43px, 300, $white-color, 54px)
+    font-family: $playfair
     margin-top: 20px
     margin-bottom: 35px
   &_logos__list
@@ -27,4 +29,5 @@
   &_bottom__subtitle
     margin-bottom: 0px
     text-align: center
+    font-family: $open-sans
     +block-title(transparentize($white-color, 0.3), transparentize($white-color, 0.6))

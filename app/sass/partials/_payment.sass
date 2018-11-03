@@ -7,10 +7,12 @@
     overflow: hidden
     text-align: center
   &_title
+    font-family: $open-sans
     +block-title($white-color, transparentize($base-text-color, 1))
     margin-bottom: 15px
   &_subtitle
-    +secondary-font(43px, 300, $white-color, 54px)
+    +font(43px, 300, $white-color, 54px)
+    font-family: $playfair
     margin-top: 20px
     margin-bottom: 10px
   &_paragraph
@@ -20,8 +22,10 @@
   &_card_image
     margin-top: 10px
   &_description__title
-    +secondary-font(30px, 300, $white-color, 34px)
+    +font(30px, 300, $white-color, 34px)
+    font-family: $playfair
     margin-top: 0
     margin-bottom: 10px
   &_text
-    +base-font(18px, 300, $white-color, 31px)
+    +font(18px, 300, $white-color, 31px)
+    font-family: $open-sans      

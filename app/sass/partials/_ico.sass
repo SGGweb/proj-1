@@ -7,18 +7,23 @@
   &_title
     +block-title($base-text-color, transparentize($base-text-color, 0.7))
   &_subtitle
-    +secondary-font(43px, 300, $base-text-color, 54px)
+    font-family: $playfair
+    +font(43px, 300, $base-text-color, 54px)
     margin-top: 9px
     text-align: center
   &_token__description
-    +base-font(18px, 300, $base-text-color, 31px)
+    +font(18px, 300, $base-text-color, 31px)
+    font-family: $open-sans
   &_table
-    +sm
-      overflow-x: scroll
+    overflow-x: scroll
+    +md
+      overflow-x: auto
   &_row__title
     border-bottom: 1px solid #000
-    +secondary-font(27px, 300, $base-text-color, 30px)
+    font-family: $playfair
+    +font(27px, 300, $base-text-color, 30px)
     padding: 15px 60px 15px 0
   &_row__value
     border-bottom: 1px solid #000
-    +base-font(16px, 300, $base-text-color, 27px)
+    +font(16px, 300, $base-text-color, 27px)
+    font-family: $open-sans

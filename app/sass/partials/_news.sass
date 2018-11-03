@@ -4,9 +4,11 @@
     margin-bottom: 24px
     overflow: hidden
   &_title
+    font-family: $open-sans
     +block-title($base-text-color, transparentize($base-text-color, 0.7))
   &_subtitle
-    +secondary-font(43px, 300, $base-text-color, 54px)
+    +font(43px, 300, $base-text-color, 54px)
+    font-family: $playfair
     margin-top: 9px
     text-align: center
   &_logo__wrap
@@ -18,7 +20,8 @@
   &_card__content
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25), 0px 4px 10px rgba(0, 0, 0, 0.25);
   &_card__title
-    +secondary-font(18px, 300, $base-text-color, 20px)
+    +font(18px, 300, $base-text-color, 20px)
+    font-family: $playfair
     margin: 10px 0
   &_card__text--wrap
     padding: 16px
