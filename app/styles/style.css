@@ -3315,14 +3315,15 @@ html
 
     width: 58px;
     height: 58px;
-    margin-right: 30px;
+    margin-right: 10px;
+    margin-bottom: 15px;
 }
 
-@media screen and (min-width: 576px)
+@media screen and (min-width: 768px)
 {
     .reason_logo
     {
-        margin-right: 10px;
+        margin-right: 30px;
     }
 }
 
@@ -3441,7 +3442,7 @@ html
 
 .ico
 {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     padding-top: 24px;
 }
 
