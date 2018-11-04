@@ -3179,6 +3179,153 @@ html
     }
 }
 
+.roadmap
+{
+    position: relative;
+
+    margin-top: 0;
+    padding-top: 0;
+
+    background: #eee;
+    background: #404d60;
+}
+
+.roadmap_bg--wrapper:before
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    width: 100%;
+    height: 1000px;
+
+    content: '';
+
+    background-image: url('../../images/bg-road-map.png');
+    background-repeat: no-repeat;
+    background-position: 50% 225%;
+}
+
+@media screen and (min-width: 576px)
+{
+    .roadmap_bg--wrapper:before
+    {
+        background-position: 50% 200%;
+    }
+}
+
+@media screen and (min-width: 768px)
+{
+    .roadmap_bg--wrapper:before
+    {
+        background-position: 50% 195%;
+    }
+}
+
+@media screen and (min-width: 992px)
+{
+    .roadmap_bg--wrapper:before
+    {
+        background-position: 50% 162%;
+    }
+}
+
+.roadmap_header
+{
+    overflow: hidden;
+
+    margin-bottom: 0;
+    padding-top: 40px;
+
+    background: #fff;
+}
+
+.roadmap_subtitle
+{
+    font-family: 'Playfair Display', serif;
+    font-size: 43px;
+    font-weight: 300;
+    line-height: 54px;
+
+    z-index: 2;
+
+    margin-top: 10px;
+    margin-bottom: 55px;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+.roadmap_cover
+{
+    z-index: 2;
+
+    max-width: 100%;
+
+    -ms-flex: auto;
+        flex: auto;
+}
+
+@media screen and (min-width: 768px)
+{
+    .roadmap_cover
+    {
+        max-width: 82%;
+    }
+}
+
+.roadmap_plan
+{
+    background: #fff;
+}
+
+.roadmap_section__2018
+{
+    margin-top: 160px;
+    padding: 0 20px 40px;
+}
+
+.roadmap_section__title
+{
+    font-family: 'Playfair Display', serif;
+    font-size: 43px;
+    font-weight: 300;
+    line-height: 54px;
+
+    margin-bottom: 20px;
+
+    color: #333;
+}
+
+@media screen and (min-width: 992px)
+{
+    .roadmap_section__title
+    {
+        text-align: center;
+    }
+}
+
+.roadmap_card__title
+{
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 54px;
+
+    margin-bottom: 0;
+
+    color: #777;
+}
+
+.roadmap_section__2019
+{
+    margin-top: 20px;
+    padding: 0 10px 55px;
+}
+
 .mission
 {
     padding-top: 24px;
@@ -3709,4 +3856,9 @@ html
     content: '';
 
     background: #007ab9 url(../images/linkedin-icon.svg) 5px 5px no-repeat;
+}
+
+.red
+{
+    color: #e22c4a;
 }

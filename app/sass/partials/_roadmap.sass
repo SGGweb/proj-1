@@ -1,0 +1,65 @@
+.roadmap
+  background: #eee
+  padding-top: 0
+  margin-top: 0
+  background: #404D60
+  position: relative
+  &_bg--wrapper
+    &:before
+      z-index: 1
+      content: ""
+      height: 1000px
+      width: 100%
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      background:
+        image: url("../../images/bg-road-map.png")
+        position: 50% 225%
+        repeat: no-repeat
+    +sm
+      &:before
+        background-position: 50% 200%
+    +md
+      &:before
+        background-position: 50% 195%
+    +lg
+      &:before
+        background-position: 50% 162%
+  &_header
+    margin-bottom: 0
+    overflow: hidden
+    padding-top: 40px
+    background: #fff
+  &_subtitle
+    z-index: 2
+    +font(43px, 300, $white-color, 54px)
+    font-family: $playfair
+    margin-top: 10px
+    text-align: center
+    margin-bottom: 55px
+  &_cover
+    flex: auto
+    max-width: 100%
+    z-index: 2
+    +md
+      max-width: 82%
+  &_plan
+    background: $white-color
+  &_section__2018
+    margin-top: 160px
+    padding: 0 20px 40px
+  &_section__title
+    +font(43px, 300, $base-text-color, 54px)
+    font-family: $playfair
+    margin-bottom: 20px
+    +lg
+      text-align: center
+  &_card__title
+    +font(32px, 300, $light-text-color, 54px)
+    font-family: $playfair
+    margin-bottom: 0
+  &_section__2019
+    margin-top: 20px
+    padding: 0 10px 55px
