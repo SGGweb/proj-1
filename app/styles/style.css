@@ -12,6 +12,7 @@
 .partners_title,
 .partners_bottom__subtitle,
 .news_title,
+.potential_title,
 .vision_title,
 .mission_title,
 .reason_title,
@@ -34,6 +35,7 @@
 .partners_title:before,
 .partners_bottom__subtitle:before,
 .news_title:before,
+.potential_title:before,
 .vision_title:before,
 .mission_title:before,
 .reason_title:before,
@@ -43,6 +45,7 @@
 .partners_title:after,
 .partners_bottom__subtitle:after,
 .news_title:after,
+.potential_title:after,
 .vision_title:after,
 .mission_title:after,
 .reason_title:after,
@@ -64,6 +67,7 @@
 .partners_title:before,
 .partners_bottom__subtitle:before,
 .news_title:before,
+.potential_title:before,
 .vision_title:before,
 .mission_title:before,
 .reason_title:before,
@@ -77,6 +81,7 @@
 .partners_title:after,
 .partners_bottom__subtitle:after,
 .news_title:after,
+.potential_title:after,
 .vision_title:after,
 .mission_title:after,
 .reason_title:after,
@@ -2951,8 +2956,6 @@ html
 
 .news_title
 {
-    font-family: 'Open Sans', sans-srif;
-
     color: #333;
 }
 
@@ -3010,6 +3013,94 @@ html
     padding: 16px;
 }
 
+.potential
+{
+    padding-top: 30px;
+    padding-bottom: 60px;
+
+    background: #eee;
+}
+
+.potential_header
+{
+    overflow: hidden;
+
+    margin-bottom: 24px;
+}
+
+.potential_title
+{
+    color: #333;
+}
+
+.potential_title:before,
+.potential_title:after
+{
+    background: #333;
+}
+
+.potential_subtitle
+{
+    font-family: 'Playfair Display', serif;
+    font-size: 43px;
+    font-weight: 300;
+    line-height: 54px;
+
+    margin-top: 9px;
+    margin-bottom: 10px;
+
+    text-align: center;
+
+    color: #333;
+}
+
+.potential_col__title
+{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 41px;
+
+    margin-bottom: 0;
+
+    text-align: center;
+
+    color: #333;
+}
+
+.potential_red
+{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 41px;
+
+    text-align: center;
+
+    color: #e22c4a;
+}
+
+.potential_number
+{
+    font-size: 60px;
+    line-height: 65px;
+
+    margin-top: 45px;
+    margin-bottom: 0;
+}
+
+.potential_red__text
+{
+    margin-top: 0;
+}
+
+.potential_inner__text
+{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+
+    color: #333;
+}
+
 .vision
 {
     padding-top: 25px;
@@ -3029,7 +3120,6 @@ html
 
 .vision_title
 {
-    font-family: 'Open Sans', sans-srif;
     font-size: 27px;
 
     margin-bottom: 15px;
@@ -3073,7 +3163,6 @@ html
 
 .vision_card__text
 {
-    font-family: 'Open Sans', sans-srif;
     font-size: 15px;
     line-height: 24px;
 
@@ -3112,8 +3201,6 @@ html
 
 .mission_title
 {
-    font-family: 'Open Sans', sans-srif;
-
     color: #333;
 }
 
@@ -3199,7 +3286,6 @@ html
 
 .mission_text
 {
-    font-family: 'Open Sans', sans-srif;
     font-size: 16px;
     line-height: 22px;
 }
@@ -3208,7 +3294,6 @@ html
 {
     .mission_text
     {
-        font-family: 'Open Sans', sans-srif;
         font-size: 24px;
         font-weight: 300;
         line-height: 41px;
@@ -3251,7 +3336,6 @@ html
 
 .mission_quote__info
 {
-    font-family: 'Open Sans', sans-srif;
     font-size: 20px;
     font-weight: 300;
     line-height: 34px;
@@ -3276,8 +3360,6 @@ html
 
 .reason_title
 {
-    font-family: 'Open Sans', sans-srif;
-
     color: #333;
 }
 
@@ -3480,7 +3562,6 @@ html
 
 .ico_token__description
 {
-    font-family: 'Open Sans', sans-srif;
     font-size: 18px;
     font-weight: 300;
     line-height: 31px;
@@ -3516,7 +3597,6 @@ html
 
 .ico_row__value
 {
-    font-family: 'Open Sans', sans-srif;
     font-size: 16px;
     font-weight: 300;
     line-height: 27px;
@@ -3541,8 +3621,6 @@ html
 
 .team_title
 {
-    font-family: 'Open Sans', sans-srif;
-
     color: #333;
 }
 
@@ -3568,7 +3646,6 @@ html
 
 .team_card
 {
-    font-family: 'Open Sans', sans-srif;
     font-size: 16px;
     font-size: 16px;
     font-weight: 600;

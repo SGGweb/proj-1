@@ -1,0 +1,30 @@
+.potential
+  background: #eee
+  padding-top: 30px
+  padding-bottom: 60px
+  &_header
+    margin-bottom: 24px
+    overflow: hidden
+  &_title
+    +block-title($base-text-color, transparentize($base-text-color, 0))
+  &_subtitle
+    +font(43px, 300, $base-text-color, 54px)
+    font-family: $playfair
+    margin-top: 9px
+    text-align: center
+    margin-bottom: 10px
+  &_col__title
+    +font(24px, 600, $base-text-color, 41px)
+    text-align: center
+    margin-bottom: 0
+  &_red
+    text-align: center
+    +font(24px, 700, $red-color, 41px)
+  &_number
+    +font(60px, false, false, 65px)
+    margin-top: 45px
+    margin-bottom: 0
+  &_red__text
+    margin-top: 0
+  &_inner__text
+    +font(14px, 600, $base-text-color, 24px)
