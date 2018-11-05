@@ -14,6 +14,7 @@
 .news_title,
 .potential_title,
 .vision_title,
+.roadmap_title,
 .mission_title,
 .reason_title,
 .payment_title,
@@ -37,6 +38,7 @@
 .news_title:before,
 .potential_title:before,
 .vision_title:before,
+.roadmap_title:before,
 .mission_title:before,
 .reason_title:before,
 .payment_title:before,
@@ -47,6 +49,7 @@
 .news_title:after,
 .potential_title:after,
 .vision_title:after,
+.roadmap_title:after,
 .mission_title:after,
 .reason_title:after,
 .payment_title:after,
@@ -69,6 +72,7 @@
 .news_title:before,
 .potential_title:before,
 .vision_title:before,
+.roadmap_title:before,
 .mission_title:before,
 .reason_title:before,
 .payment_title:before,
@@ -83,6 +87,7 @@
 .news_title:after,
 .potential_title:after,
 .vision_title:after,
+.roadmap_title:after,
 .mission_title:after,
 .reason_title:after,
 .payment_title:after,
@@ -2949,9 +2954,16 @@ html
 
 .news_header
 {
+    display: -ms-flexbox;
+    display: flex;
     overflow: hidden;
+        flex-direction: column;
 
     margin-bottom: 24px;
+
+    -ms-flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .news_title
@@ -2981,19 +2993,58 @@ html
 
 .news_logo__wrap
 {
+    display: -ms-flexbox;
+    display: flex;
+
     height: 20px;
     padding-bottom: 10px;
+
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+}
+
+.news_cards__row
+{
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-right: -15px;
+    margin-left: -15px;
+
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .news_card
 {
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
     margin-bottom: 50px;
     padding: 0 10px;
+
+    -ms-flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
 }
 
 .news_card__content
 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, .25), 0 4px 10px rgba(0, 0, 0, .25);
+
+    -ms-flex-positive: 1;
+    flex-grow: 1;
 }
 
 .news_card__title
@@ -3010,7 +3061,15 @@ html
 
 .news_card__text--wrap
 {
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
     padding: 16px;
+
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-direction: column;
 }
 
 .potential
@@ -3181,55 +3240,14 @@ html
 
 .roadmap
 {
-    position: relative;
-
-    margin-top: 0;
     padding-top: 0;
-
-    background: #eee;
-    background: #404d60;
 }
 
-.roadmap_bg--wrapper:before
+.roadmap_wrapper
 {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    left: 0;
+    padding-top: 25px;
 
-    width: 100%;
-    height: 1000px;
-
-    content: '';
-
-    background-image: url('../../images/bg-road-map.png');
-    background-repeat: no-repeat;
-    background-position: 50% 225%;
-}
-
-@media screen and (min-width: 576px)
-{
-    .roadmap_bg--wrapper:before
-    {
-        background-position: 50% 200%;
-    }
-}
-
-@media screen and (min-width: 768px)
-{
-    .roadmap_bg--wrapper:before
-    {
-        background-position: 50% 195%;
-    }
-}
-
-@media screen and (min-width: 992px)
-{
-    .roadmap_bg--wrapper:before
-    {
-        background-position: 50% 162%;
-    }
+    background: radial-gradient(circle at 50% 20%, #3c4a5e 0%, #112d47 30%);
 }
 
 .roadmap_header
@@ -3237,9 +3255,23 @@ html
     overflow: hidden;
 
     margin-bottom: 0;
-    padding-top: 40px;
+    padding-top: 0;
+    padding-bottom: 55px;
+}
 
-    background: #fff;
+.roadmap_title
+{
+    font-size: 24px;
+
+    margin-bottom: 15px;
+
+    color: #fff;
+}
+
+.roadmap_title:before,
+.roadmap_title:after
+{
+    background: rgba(51, 51, 51, 0);
 }
 
 .roadmap_subtitle
@@ -3251,8 +3283,8 @@ html
 
     z-index: 2;
 
-    margin-top: 10px;
-    margin-bottom: 55px;
+    margin-top: 20px;
+    margin-bottom: 45px;
 
     text-align: center;
 
@@ -3284,8 +3316,8 @@ html
 
 .roadmap_section__2018
 {
-    margin-top: 160px;
-    padding: 0 20px 40px;
+    margin-top: 50px;
+    padding: 0 20px;
 }
 
 .roadmap_section__title
@@ -3295,7 +3327,8 @@ html
     font-weight: 300;
     line-height: 54px;
 
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
 
     color: #333;
 }
@@ -3315,6 +3348,7 @@ html
     font-weight: 300;
     line-height: 54px;
 
+    margin-top: 25px;
     margin-bottom: 0;
 
     color: #777;
@@ -3322,7 +3356,7 @@ html
 
 .roadmap_section__2019
 {
-    margin-top: 20px;
+    margin-top: 15px;
     padding: 0 10px 55px;
 }
 
