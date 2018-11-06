@@ -14,8 +14,10 @@
 .news_title,
 .potential_title,
 .vision_title,
-.roadmap_title,
 .mission_title,
+.mobile-app_title,
+.mobile-app_bottom__title,
+.roadmap_title,
 .reason_title,
 .payment_title,
 .ico_title,
@@ -38,8 +40,10 @@
 .news_title:before,
 .potential_title:before,
 .vision_title:before,
-.roadmap_title:before,
 .mission_title:before,
+.mobile-app_title:before,
+.mobile-app_bottom__title:before,
+.roadmap_title:before,
 .reason_title:before,
 .payment_title:before,
 .ico_title:before,
@@ -49,8 +53,10 @@
 .news_title:after,
 .potential_title:after,
 .vision_title:after,
-.roadmap_title:after,
 .mission_title:after,
+.mobile-app_title:after,
+.mobile-app_bottom__title:after,
+.roadmap_title:after,
 .reason_title:after,
 .payment_title:after,
 .ico_title:after,
@@ -72,8 +78,10 @@
 .news_title:before,
 .potential_title:before,
 .vision_title:before,
-.roadmap_title:before,
 .mission_title:before,
+.mobile-app_title:before,
+.mobile-app_bottom__title:before,
+.roadmap_title:before,
 .reason_title:before,
 .payment_title:before,
 .ico_title:before,
@@ -87,8 +95,10 @@
 .news_title:after,
 .potential_title:after,
 .vision_title:after,
-.roadmap_title:after,
 .mission_title:after,
+.mobile-app_title:after,
+.mobile-app_bottom__title:after,
+.roadmap_title:after,
 .reason_title:after,
 .payment_title:after,
 .ico_title:after,
@@ -3238,128 +3248,6 @@ html
     }
 }
 
-.roadmap
-{
-    padding-top: 0;
-}
-
-.roadmap_wrapper
-{
-    padding-top: 25px;
-
-    background: radial-gradient(circle at 50% 20%, #3c4a5e 0%, #112d47 30%);
-}
-
-.roadmap_header
-{
-    overflow: hidden;
-
-    margin-bottom: 0;
-    padding-top: 0;
-    padding-bottom: 55px;
-}
-
-.roadmap_title
-{
-    font-size: 24px;
-
-    margin-bottom: 15px;
-
-    color: #fff;
-}
-
-.roadmap_title:before,
-.roadmap_title:after
-{
-    background: rgba(51, 51, 51, 0);
-}
-
-.roadmap_subtitle
-{
-    font-family: 'Playfair Display', serif;
-    font-size: 43px;
-    font-weight: 300;
-    line-height: 54px;
-
-    z-index: 2;
-
-    margin-top: 20px;
-    margin-bottom: 45px;
-
-    text-align: center;
-
-    color: #fff;
-}
-
-.roadmap_cover
-{
-    z-index: 2;
-
-    max-width: 100%;
-
-    -ms-flex: auto;
-        flex: auto;
-}
-
-@media screen and (min-width: 768px)
-{
-    .roadmap_cover
-    {
-        max-width: 82%;
-    }
-}
-
-.roadmap_plan
-{
-    background: #fff;
-}
-
-.roadmap_section__2018
-{
-    margin-top: 50px;
-    padding: 0 20px;
-}
-
-.roadmap_section__title
-{
-    font-family: 'Playfair Display', serif;
-    font-size: 43px;
-    font-weight: 300;
-    line-height: 54px;
-
-    margin-top: 20px;
-    margin-bottom: 15px;
-
-    color: #333;
-}
-
-@media screen and (min-width: 992px)
-{
-    .roadmap_section__title
-    {
-        text-align: center;
-    }
-}
-
-.roadmap_card__title
-{
-    font-family: 'Playfair Display', serif;
-    font-size: 32px;
-    font-weight: 300;
-    line-height: 54px;
-
-    margin-top: 25px;
-    margin-bottom: 0;
-
-    color: #777;
-}
-
-.roadmap_section__2019
-{
-    margin-top: 15px;
-    padding: 0 10px 55px;
-}
-
 .mission
 {
     padding-top: 24px;
@@ -3524,6 +3412,250 @@ html
     margin-top: 8px;
 
     color: #333;
+}
+
+.mobile-app
+{
+    padding-top: 25px;
+    padding-bottom: 30px;
+
+    background: radial-gradient(circle at 50% 20%, #3c4a5e 0%, #112d47 30%);
+}
+
+.mobile-app_header
+{
+    overflow: hidden;
+
+    max-width: 710px;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.mobile-app_title,
+.mobile-app_bottom__title
+{
+    font-size: 24px;
+    line-height: 40px;
+
+    margin-bottom: 15px;
+
+    color: #fff;
+}
+
+.mobile-app_title:before,
+.mobile-app_bottom__title:before,
+.mobile-app_title:after,
+.mobile-app_bottom__title:after
+{
+    background: rgba(51, 51, 51, 0);
+}
+
+.mobile-app_subtitle
+{
+    font-family: 'Playfair Display', serif;
+    font-size: 43px;
+    font-weight: 300;
+    line-height: 54px;
+
+    z-index: 2;
+
+    margin-top: 20px;
+    margin-bottom: 45px;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+.mobile-app_bottom__title
+{
+    line-height: 40px;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.mobile-app_slider
+{
+    margin-bottom: 80px;
+
+    text-align: center;
+}
+
+.mobile-app_slider__cover
+{
+    max-width: 660px;
+    margin: 0 auto;
+}
+
+.mobile-app_slider__title
+{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 27px;
+
+    margin-top: 0;
+
+    color: #fff;
+}
+
+.mobile-app_slider__description
+{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 27px;
+
+    max-width: 600px;
+    margin: 0 auto;
+
+    color: #fff;
+}
+
+.mobile-app_download
+{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.mobile-app_download__title
+{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 41px;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+.mobile-app_btn
+{
+    padding: 0 14px;
+    padding-bottom: 15px;
+}
+
+.roadmap
+{
+    padding-top: 0;
+}
+
+.roadmap_wrapper
+{
+    padding-top: 25px;
+
+    background: radial-gradient(circle at 50% 27%, #3c4a5e 0%, #112d47 30%);
+}
+
+.roadmap_header
+{
+    overflow: hidden;
+
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 55px;
+}
+
+.roadmap_title
+{
+    font-size: 24px;
+
+    margin-bottom: 15px;
+
+    color: #fff;
+}
+
+.roadmap_title:before,
+.roadmap_title:after
+{
+    background: rgba(51, 51, 51, 0);
+}
+
+.roadmap_subtitle
+{
+    font-family: 'Playfair Display', serif;
+    font-size: 43px;
+    font-weight: 300;
+    line-height: 54px;
+
+    z-index: 2;
+
+    margin-top: 20px;
+    margin-bottom: 45px;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+.roadmap_cover
+{
+    z-index: 2;
+
+    max-width: 100%;
+
+    -ms-flex: auto;
+        flex: auto;
+}
+
+@media screen and (min-width: 768px)
+{
+    .roadmap_cover
+    {
+        max-width: 82%;
+    }
+}
+
+.roadmap_plan
+{
+    background: #fff;
+}
+
+.roadmap_section__2018
+{
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.roadmap_section__title
+{
+    font-family: 'Playfair Display', serif;
+    font-size: 43px;
+    font-weight: 300;
+    line-height: 54px;
+
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+    color: #333;
+}
+
+@media screen and (min-width: 992px)
+{
+    .roadmap_section__title
+    {
+        text-align: center;
+    }
+}
+
+.roadmap_card__title
+{
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 54px;
+
+    margin-top: 25px;
+    margin-bottom: 0;
+
+    color: #777;
+}
+
+.roadmap_section__2019
+{
+    margin-top: 15px;
+    padding: 0 10px 55px;
 }
 
 .reason
@@ -3701,6 +3833,21 @@ html
     line-height: 31px;
 
     color: #fff;
+}
+
+.payment ul li
+{
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+
+.payment ul li:before
+{
+    position: absolute;
+
+    margin-left: -20px;
+
+    content: '- ';
 }
 
 .ico

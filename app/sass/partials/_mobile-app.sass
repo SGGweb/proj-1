@@ -1,0 +1,51 @@
+.mobile-app
+  padding-top: 25px
+  padding-bottom: 30px
+  background: radial-gradient(circle at 50% 20%, #3c4a5e 0%, #112d47 30%)
+  &_header
+    margin: 0 auto
+    overflow: hidden
+    padding-top: 0
+    padding-bottom: 0
+    max-width: 710px
+  &_title
+    +block-title($white-color, transparentize($base-text-color, 1))
+    margin-bottom: 15px
+    font-size: 24px
+    line-height: 40px
+  &_subtitle
+    z-index: 2
+    +font(43px, 300, $white-color, 54px)
+    font-family: $playfair
+    margin-top: 20px
+    text-align: center
+    margin-bottom: 45px
+  &_bottom__title
+    @extend .mobile-app_title
+    margin-top: 5px
+    margin-bottom: 5px
+    line-height: 40px
+  &_slider
+    text-align: center
+    margin-bottom: 80px
+  &_slider__cover
+    max-width: 660px
+    margin: 0 auto
+  &_slider__title
+    +font(22px, 300, $white-color, 27px)
+    font-family: $playfair
+    margin-top: 0
+  &_slider__description
+    +font(16px, 600, $white-color, 27px)
+    max-width: 600px
+    margin: 0 auto
+  &_download
+    max-width: 500px
+    margin: 0 auto
+  &_download__title
+    +font(24px, 600, $white-color, 41px)
+    text-align: center
+  &_btn
+    padding: 0 14px
+    padding-bottom: 15px
+
